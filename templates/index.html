@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Map Viewer</title>
+</head>
+<body>
+    <h2>Enter a City Name</h2>
+    <form method="POST">
+        <input type="text" name="city" placeholder="e.g. Mumbai" required>
+        <input type="submit" value="Show Map">
+    </form>
+    <br>
+    <div>
+        {{ map_html|safe }}
+    </div>
+</body>
+</html>
